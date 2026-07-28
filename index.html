@@ -1,117 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cyan3771的网站</title>
+    <link rel="icon" href="icon.png" type="image/png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /*防止往外撑*/
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <title>Cyan3771的网站</title>
-  <link rel="icon" href="icon.png" type="image/png">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      /*防止往外撑*/
-    }
+      header {
+        background-color: #00ffff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        /* 8下边距 */
+        position: sticky;
+        top: 0;
+        /*固定在顶部*/
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        /* 阴影，水平0 垂直2 模糊10 颜色rgba0，0，0，0.4*/
+      }
 
-    header {
-      background-color: #00ffff;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 8px;
-      /* 8下边距 */
-      position: sticky;
-      top: 0;
-      /*固定在顶部*/
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-      /* 阴影，水平0 垂直2 模糊10 颜色rgba0，0，0，0.4*/
+      .big-title {
+        font-size: 18px;
+        font-weight: bold;
+      }
 
-    }
+      .video-container {
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 28.125%;
+        height: 0;
+      }
 
-    .big-title {
-      font-size: 18px;
-      font-weight: bold;
-    }
+      .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
 
-    .video-container {
-      position: relative;
-      width: 50%;
-      margin: 0 auto;
-      padding-bottom: 28.125%;
-      height: 0;
-    }
+      .logo {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+      }
 
-    .video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
+      .avatar {
+        width: 30%;
+        height: auto;
+        object-fit: cover;
+        /* 防止图片拉伸变形 */
+        margin: 0 8px;
+        /* 图片之间增加间距 */
+      }
 
-    .logo {
-      width: 18px;
-      height: 18px;
-      margin-right: 5px;
-    }
+      .main {
+        text-align: center;
+        margin-top: 10px;
+      }
 
-    .avatar {
-      width: 30%;
-      height: auto;
-      object-fit: cover;
-      /* 防止图片拉伸变形 */
-      margin: 0 8px;
-      /* 图片之间增加间距 */
-    }
+      .picture-frame {
+        display: flex;
+        justify-content: center;
+        /* 水平居中 */
+      }
+    </style>
+  </head>
 
-    .main {
-      text-align: center;
-      margin-top: 10px;
-    }
+  <body>
+    <header>
+      <span class="big-title"
+        ><img src="icon.png" alt="logo" class="logo" />Cyan<a
+          href="https://player.bilibili.com/player.html?isOutside=false&aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&p=1"
+          style="color: #000000"
+          >3771</a
+        >的网站
+      </span>
+    </header>
+    <div class="main">
+      <p>
+        <a
+          href="https://qm.qq.com/q/orB5pHcJuo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://img.shields.io/badge/QQ%3A3840165879-0097ff?style=for-the-badge&logo=QQ&logoColor=ffffff"
+            alt="QQ:3840165879"
+          />
+        </a>
+      </p>
 
-    .picture-frame {
-      display: flex;
-      justify-content: center;
-      /* 水平居中 */
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <span class="big-title"><img src="icon.png" alt="logo" class="logo" />Cyan<a
-        href="https://player.bilibili.com/player.html?isOutside=false&aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&p=1"
-        style="color: #000000;">3771</a>的网站
-    </span>
-  </header>
-  <div class="main">
-    <p>
-      <a href="https://qm.qq.com/q/orB5pHcJuo" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/QQ%3A3840165879-0097ff?style=for-the-badge&logo=QQ&logoColor=ffffff"
-          alt="QQ:3840165879" />
-      </a>
-    </p>
-
-    <p>
-    <div class="picture-frame">
-      <a href="https://qm.qq.com/q/orB5pHcJuo" target="_blank" rel="noopener noreferrer">
-        <img src="icon.png" alt="Cyan3771" class="avatar" /><img src="banana.png" alt="banana" class="avatar" />
-      </a>
-    </div>
-    </p>
-
-    <details>
-      <summary>滚木</summary>
-      <!--<button
-        onclick="window.location.href='https://player.bilibili.com/player.html?isOutside=false&aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&p=1'">点我</button>-->
-      <div class="video-container">
-        <iframe
-          src="https://player.bilibili.com/player.html?isOutside=false&aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&p=1"
-          class="video">Rick！！！</iframe>
+      <p></p>
+      <div class="picture-frame">
+        <a
+          href="https://qm.qq.com/q/orB5pHcJuo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="icon.png" alt="Cyan3771" class="avatar" /><img
+            src="banana.png"
+            alt="banana"
+            class="avatar"
+          />
+        </a>
       </div>
-    </details>
-  </div>
-</body>
-
+      <details>
+        <summary>滚木</summary>
+        <div class="video-container">
+          <iframe
+            src="https://player.bilibili.com/player.html?isOutside=false&aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&p=1"
+            class="video"
+            >Rick！！！</iframe
+          >
+        </div>
+      </details>
+    </div>
+  </body>
 </html>
